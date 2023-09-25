@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(227, 225, 225);
+    height: 10000px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "navbar navbar"
+                        "article sidebar";
+    gap: 100px;
+    align-items: flex-start;
+    position: relative;
+}
+
+nav {
+    background-color: white;
+    grid-area: navbar;
+    box-shadow: 5px 3px 3px rgb(213, 211, 211);
+    display: flex;
+    position: relative; 
+    align-items: center;
+    font-size: 36px;
+    font-family: sans-serif;
+}
+
+nav > img{
+    width: 100px;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.profil{
+    position: relative;
+    left: 950px;
+}
+
+aside{
+    background-color: white;
+    width: 80%;
+    padding: 3%;
+    border-style: outset;
+    border-radius: 7%;
+    position: sticky;
+    top: 100px;
+}
+
+article{
+    background-image: url(banniere.jpg);
+    margin-left: 150px;
+    height: 300px;
+}
+
+.user img{
+    width: 100px; 
+    z-index: 8;
+    position: absolute;
+    top: 340px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.titre{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nom{
+    padding: 6%;
+}
+.description{
+    margin-top: 250px;
+    height: 150px;
+    background-color: white;
+    
+}
